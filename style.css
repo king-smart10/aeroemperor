@@ -1,0 +1,1897 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --brand-main: rgba(0, 107, 255, 1);
+  --pure-dark: rgba(4, 4, 5, 1);
+  --pure-light: rgba(255, 255, 255, 1);
+  --neutral-500: rgba(113, 113, 122, 1);
+  --neutral-700: rgba(63, 63, 70, 1);
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: var(--pure-dark);
+  color: var(--pure-light);
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Header Styles */
+.header {
+  position: fixed;
+  top: 20px;
+  left: 40%;
+  transform: translateX(-50%);
+  width: 958px;
+  height: 80px;
+  background-image: url('figmaAssets/base.svg');
+  background-size: 100% 100%;
+  z-index: 50;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 882px;
+  height: 46px;
+  margin: 17px 0 0 16px;
+}
+
+.logo {
+  width: 30px;
+  height: 46px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 60px; 
+}
+
+.nav-link {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--pure-light);
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.nav-link:hover {
+  opacity: 0.3;
+}
+
+.nav-dots-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.nav-dots {
+  width: 40px;
+  height: 40px;
+}
+
+/* Button Styles */
+.btn {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 16px 24px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-primary {
+  background-color: var(--pure-light);
+  color: var(--pure-dark);
+  border: 1px solid white;
+}
+
+.btn-primary:hover {
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   opacity: 0.3;
+}
+
+.btn-secondary {
+  background-color: var(--neutral-700);
+  color: var(--pure-light);
+}
+.btn-secondary:hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0.3;
+}
+
+.btn-spec {
+  position: absolute;
+  top: 18px;
+  right: 75px;
+  background-color: var(--brand-main);
+  color: var(--pure-light);
+}
+
+.btn-card {
+  background-color: var(--neutral-700);
+  color: var(--pure-light);
+  margin-top: 24px;
+}
+
+.btn-join {
+  position: absolute;
+  bottom: 85px;
+  left: calc(50% - 8px);
+  width: 80px;
+  padding: 8px;
+  background-color: var(--pure-light);
+  color: var(--pure-dark);
+  border: 1px solid white;
+}
+
+.btn-cta {
+  background-color: var(--pure-light);
+  color: var(--pure-dark);
+  border: 1px solid white;
+}
+
+
+/* Features Section */
+.features-section {
+  position: relative;
+  width: 100%;
+  min-height: 1332px;
+  overflow: hidden;
+}
+
+
+.features-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 1332px;
+}
+
+.vector-bg {
+  position: absolute;
+  top: 4px;
+  right: 0;
+  width: 100%;
+  max-width: 1808px;
+  height: 1328px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.vector-img {
+  margin-top: -366px;
+  height: 1344px;
+  margin-left: 1126px;
+  width: 1660px;
+}
+
+.cloud {
+  position: absolute;
+  z-index: 1;
+  opacity: 0.55;       /* soft cloud look */
+  filter: blur(2px);   /* slight blur, optional */
+}
+
+/* First cloud – wide & centered behind */
+.cloud-1 {
+  width: 800px;       /* adjust this */
+  top: 40%;           /* moves it down a bit */
+  left: 250px;       /* shift left */
+  transform: translateY(-50%);
+}
+
+/* Second cloud – upper-right, lighter */
+.cloud-2 {
+  width: 680px;
+  top: -40px;
+  right: 150px;
+  opacity: 0.45;
+}
+
+.hero-content {
+  position: absolute;
+  top: 446px;
+  left: 24%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  max-width: 481px;
+  text-align: center;
+  align-items: center;
+}
+
+.chinese-text {
+  font-family: 'Noto Emoji', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--pure-light);
+  letter-spacing: -0.6px;
+  line-height: 90px;
+}
+
+.hero-title {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  font-size: 100px;
+  color: var(--pure-light);
+  letter-spacing: -2px;
+  line-height: 90px;
+}
+
+.hero-description {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--neutral-500);
+  line-height: 24px;
+  max-width: 476px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+  max-width: 396px;
+}
+
+.drone-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1100px;
+  height: 760px;
+}
+
+.drone-img {
+  margin-top: 4px;
+  width: 1099px;
+  height: 755px;
+  margin-left: 1px;
+}
+
+.decorative-images {
+  position: absolute;
+  top: 399px;
+  left: 420px;
+  width: 752px;
+  height: 47px;
+}
+
+.deco-1 {
+  position: absolute;
+  width: 3.32%;
+  height: 53.19%;
+  top: 46.81%;
+  left: 96.68%;
+}
+
+.deco-2 {
+  position: absolute;
+  width: 3.32%;
+  height: 53.19%;
+  top: 38.30%;
+  left: 42.29%;
+}
+
+.deco-3 {
+  position: absolute;
+  width: 3.32%;
+  height: 53.19%;
+  top: 0;
+  left: 0;
+}
+
+.promo-card {
+  position: absolute;
+  top: 338px;
+  left: 1100px;
+  width: 370px;
+  height: 516px;
+}
+
+.promo-circle-white {
+  position: absolute;
+  bottom: 30px;
+  left: 60px;
+  width: 54px;
+  height: 54px;
+  background: var(--pure-light);
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.promo-circle-blue {
+  position: absolute;
+  top: 40px;
+  left: 60px;
+  width: 46px;
+  height: 46px;
+  background: var(--brand-main);
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.promo-img {
+  position: absolute;
+  border-radius: 40px 40px 10px 10px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 100;
+  object-fit: cover;
+}
+
+.promo-decoration {
+  position: absolute;
+  width: 56.42%;
+  height: 43.25%;
+  top: 48.26%;
+  left: 42.51%;
+}
+
+.promo-text {
+  position: absolute;
+  width: 46.52%;
+  top: 65.89%;
+  left: 47.86%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--pure-light);
+}
+
+.promo-title {
+  position: absolute;
+  top: 52.91%;
+  left: 64.44%;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--pure-light);
+}
+
+/* Product Section */
+.product-section {
+  position: relative;
+  width: 100%;
+}
+
+.product-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.product-bg {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.product-info {
+  position: absolute;
+  bottom: 48px;
+  left: 48px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-new {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--brand-main);
+  margin-bottom: 134px;
+}
+
+.product-model {
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 72px;
+  color: var(--pure-light);
+}
+
+.product-name {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 44px;
+  color: var(--pure-light);
+}
+
+.specs-container {
+  position: absolute;
+  bottom: 187px;
+  right: 190px;
+  width: 596px;
+  height: 160px;
+  background-image: url('figmaAssets/subtract-5.svg');
+  background-size: 100% 100%;
+  display: flex;
+  align-items: flex-start;
+  padding: 24px 0 0 80px;
+  gap: 48px;
+}
+
+.spec-item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.spec-value {
+  width: 150px;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 60px;
+  color: var(--pure-light);
+}
+
+.spec-label {
+  width: 150px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--pure-light);
+}
+
+.spec-divider {
+  width: 1px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.nav-dots-container {
+  position: absolute;
+  bottom: 74px;
+  right: 161px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-dot {
+  width: 32px;
+  height: 8px;
+  background-color: var(--pure-light);
+  opacity: 0.2;
+  border-radius: 48px;
+  transform: rotate(-44.85deg);
+}
+
+.nav-dot.active {
+  background-color: var(--brand-main);
+  opacity: 1;
+}
+
+/* Main Content Section */
+.main-content-section {
+  width: 100%;
+  padding: 64px 16px;
+}
+
+.main-content-section * {
+  text-decoration: none;
+}
+
+
+.content-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 64px;
+  max-width: 1318px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--pure-light);
+  text-align: center;
+}
+
+.content-title {
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 72px;
+  color: var(--pure-light);
+  text-align: center;
+}
+
+.content-description {
+  max-width: 876px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--neutral-500);
+  text-align: center;
+}
+
+.image-grid {
+  max-width: 1318px;
+  margin: 0 auto;
+}
+
+.image-row-top {
+  display: grid;
+  grid-template-columns: 919px 371px;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.image-row-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.grid-img {
+  object-fit: cover;
+}
+
+.grid-img.large {
+  width: 919px;
+  height: 540px;
+}
+
+.grid-img.small {
+  width: 371px;
+  height: 540px;
+}
+
+.grid-img.medium {
+  width: 640px;
+  height: 466px;
+}
+
+/* Hero Cards Section */
+.hero-cards-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 48px 16px;
+}
+
+.cards-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--pure-light);
+  text-align: center;
+}
+
+.cards-title {
+  max-width: 942px;
+  margin: 28px auto 0;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 72px;
+  color: var(--pure-light);
+  text-align: center;
+}
+
+.cards-description {
+  max-width: 904px;
+  margin: 14px auto 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--neutral-500);
+  text-align: center;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 75px;
+}
+
+.card {
+  width: 100%;
+  max-width: 418.5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img {
+  width: 100%;
+  height: 303px;
+  object-fit: cover;
+}
+
+.card-text {
+  margin-top: 26px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #b8b6ba;
+}
+
+/* CTA Section */
+.cta-section {
+  position: relative;
+  width: 100%;
+  padding: 48px 0;
+}
+
+.cta-wrapper {
+  position: relative;
+  max-width: 1312px;
+  margin: 0 auto;
+}
+
+.cta-bg {
+  position: absolute;
+  top: 49px;
+  left: 0;
+  width: 100%;
+  height: 271px;
+  object-fit: cover;
+}
+
+.cta-image {
+  position: absolute;
+  top: 0;
+  left: 69px;
+  width: 576px;
+  height: 389px;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.cta-content {
+  position: relative;
+  padding-top: 91px;
+  padding-left: 696px;
+  padding-right: 52px;
+}
+
+.cta-title {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 60px;
+  color: white;
+  margin-bottom: 24px;
+}
+
+/* Footer */
+.footer {
+  position: relative;
+  width: 100%;
+  background-color: #040405;
+}
+
+.footer-line {
+  width: 100%;
+  height: 43px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 80px 150px;
+  position: relative;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer-logo {
+  width: 117px;
+  height: 46px;
+}
+
+.footer-copyright {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--pure-light);
+}
+
+.footer-links {
+  display: flex;
+  gap: 30px;
+  position: relative;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.footer-column-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--brand-main);
+}
+
+.footer-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--pure-light);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: var(--brand-main);
+}
+
+.footer-glow {
+  position: absolute;
+  top: 223px;
+  left: -475px;
+  width: 1753px;
+  height: 368px;
+  background-color: var(--brand-main);
+  border-radius: 876.5px / 184px;
+  filter: blur(200px);
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 1400px) {
+  .header {
+    width: 90%;
+    max-width: 958px;
+  }
+  
+  .nav {
+    width: 100%;
+    padding: 0 16px;
+  }
+  
+  .hero-content {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .drone-image {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .promo-card {
+    display: none;
+  }
+  
+  .decorative-images {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  
+  .content-title,
+  .cards-title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  
+  .image-row-top {
+    grid-template-columns: 1fr;
+  }
+  
+  .grid-img.large,
+  .grid-img.small {
+    width: 100%;
+  }
+  
+  .grid-img.medium {
+    width: 100%;
+  }
+  
+  .cta-content {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  
+  .cta-image {
+    display: none;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    width: 95%;
+    height: auto;
+    padding: 10px;
+    background: rgba(4, 4, 5, 0.9);
+    border-radius: 12px;
+  }
+  
+  .nav {
+    flex-direction: column;
+    height: auto;
+    gap: 16px;
+  }
+  
+  .nav-links {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .hero-title {
+    font-size: 40px;
+    line-height: 44px;
+  }
+  
+  .product-model {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  
+  .specs-container {
+    display: none;
+  }
+  
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.about-section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 120px 48px;
+  background-color: rgba(4, 4, 5, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-section .bg-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(0, 107, 255, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.about-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.about-section .section-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.about-section .section-tag {
+  font-family: 'Orbitron', Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(0, 107, 255, 1);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.about-section .section-title {
+  font-family: 'Orbitron', Helvetica;
+  font-size: 60px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 1);
+  line-height: 72px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.about-section .section-desc {
+  font-family: 'Orbitron', Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(113, 113, 122, 1);
+  line-height: 28px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about-section .cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.about-section .card {
+  background-color: rgba(63, 63, 70, 0.3);
+  border-radius: 24px;
+  padding: 40px;
+  border: 1px solid rgba(63, 63, 70, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-section .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 107, 255, 0.15);
+}
+
+.about-section .card-icon {
+  width: 64px;
+  height: 64px;
+  background-color: rgba(0, 107, 255, 1);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  color: white;
+}
+
+.about-section .card-title {
+  font-family: 'Orbitron', Helvetica;
+  font-size: 24px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 16px;
+}
+
+.about-section .card-text {
+  font-family: 'Orbitron', Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(113, 113, 122, 1);
+  line-height: 24px;
+}
+
+.about-section .stats-row {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+ gap: 80px;
+  flex-wrap: wrap;
+}
+
+.about-section .stat-item {
+  text-align: center;
+}
+
+.about-section .stat-value {
+  font-family: 'Orbitron', Helvetica;
+  font-size: 48px;
+  font-weight: 900;
+  color: rgba(0, 107, 255, 1);
+}
+
+.about-section .stat-label {
+  font-family: 'Orbitron', Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 8px;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* drone section */
+.drones-section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 120px 48px;
+  background-color: rgba(4, 4, 5, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.drones-section .bg-glow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0, 107, 255, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.drones-section .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.drones-section .section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.drones-section .section-tag {
+  font-family: 'Orbitron', Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(0, 107, 255, 1);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.drones-section .section-title {
+  font-family: 'Orbitron', Helvetica;
+  font-size: 60px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 1);
+  line-height: 72px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.drones-section .section-desc {
+  font-family: 'Orbitron', Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(113, 113, 122, 1);
+  line-height: 28px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.drones-section .filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.drones-section .filter-btn {
+  font-family: 'Orbitron', Helvetica;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: 12px;
+  border: 1px solid rgba(63, 63, 70, 0.8);
+  background-color: transparent;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.drones-section .filter-btn:hover {
+  background-color: rgba(63, 63, 70, 0.5);
+}
+
+.drones-section .filter-btn.active {
+  background-color: rgba(0, 107, 255, 1);
+  border: none;
+}
+
+.drones-section .drones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+.drones-section .drone-card {
+  background-color: rgba(63, 63, 70, 0.2);
+  border-radius: 24px;
+  padding: 24px;
+  border: 1px solid rgba(63, 63, 70, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.drones-section .drone-card:hover {
+  background-color: rgba(63, 63, 70, 0.4);
+  transform: translateY(-4px);
+}
+
+.drones-section .drone-card.selected {
+  background-color: rgba(0, 107, 255, 0.15);
+  border: 2px solid rgba(0, 107, 255, 1);
+}
+
+.drones-section .drone-image-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+
+.drones-section .drone-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 16px;
+}
+
+.drone-image-wrapper {
+  height: 220px; /* adjust to your design */
+  overflow: hidden;
+}
+/* All category: smaller images */
+.drones-section.all-category .drone-image-wrapper {
+  height: 220px;
+}
+
+/* Professional category: larger images */
+.drones-section.professional-category .drone-image-wrapper {
+  height: auto;
+  object-position: center;
+  object-fit: contain;
+}
+
+/* Racing category: larger images */
+.drones-section.racing-category .drone-image-wrapper {
+  height:  auto;
+}
+
+/* Compact category */
+.drones-section.compact-category .drone-image-wrapper {
+  height:  auto;
+}
+
+/* Industrial category */
+.drones-section.industrial-category .drone-image-wrapper {
+  height:  auto;
+}
+
+
+.drone-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;  /* FIXES zooming */
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+.drones-section .drone-category {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: rgba(0, 107, 255, 1);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-family: 'Orbitron', Helvetica;
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+}
+
+.drones-section .drone-name {
+  font-family: 'Orbitron', Helvetica;
+  font-size: 24px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 8px;
+}
+
+.drones-section .drone-desc {
+  font-family: 'Orbitron', Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(113, 113, 122, 1);
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.drones-section .specs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.drones-section .spec-item {
+  background-color: rgba(39, 40, 55, 0.5);
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.drones-section .spec-label {
+  font-family: 'Orbitron', Helvetica;
+  font-size: 12px;
+  color: rgba(113, 113, 122, 1);
+}
+
+.drones-section .spec-value {
+  font-family: 'Orbitron', Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  margin-top: 4px;
+}
+
+.drones-section .drone-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.drones-section .drone-price {
+  font-family: 'Orbitron', Helvetica;
+  font-size: 28px;
+  font-weight: 900;
+  color: rgba(0, 107, 255, 1);
+}
+
+.drones-section .learn-more-btn {
+  font-family: 'Orbitron', Helvetica;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: 12px;
+  border: none;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(4, 4, 5, 1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.drones-section .learn-more-btn:hover {
+  background-color: rgba(0, 107, 255, 1);
+  color: white;
+}
+
+/* Mission section */
+
+.missions-section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 120px 48px;
+  background-color: rgba(4, 4, 5, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.missions-section .bg-glow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1000px;
+  height: 600px;
+  background: radial-gradient(ellipse at bottom, rgba(0, 107, 255, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.missions-section .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.missions-section .section-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.missions-section .section-tag {
+  font-family: 'Orbitron', Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(0, 107, 255, 1);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.missions-section .section-title {
+  font-family: 'Orbitron', Helvetica;
+  font-size: 60px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 1);
+  line-height: 72px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.missions-section .section-desc {
+  font-family: 'Orbitron', Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(113, 113, 122, 1);
+  line-height: 28px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.missions-section .content-wrapper {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.missions-section .missions-list {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.missions-section .mission-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 24px;
+  background-color: rgba(63, 63, 70, 0.2);
+  border-radius: 16px;
+  border: 1px solid rgba(63, 63, 70, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.missions-section .mission-item:hover {
+  background-color: rgba(63, 63, 70, 0.4);
+}
+
+.missions-section .mission-item.active {
+  background-color: rgba(0, 107, 255, 0.15);
+  border: 2px solid rgba(0, 107, 255, 1);
+}
+
+.missions-section .mission-icon {
+  width: 56px;
+  height: 56px;
+  background-color: rgba(63, 63, 70, 0.8);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.missions-section .mission-item.active .mission-icon {
+  background-color: rgba(0, 107, 255, 1);
+}
+
+.missions-section .mission-title {
+  font-family: 'Orbitron', Helvetica;
+  font-size: 18px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 4px;
+}
+
+.missions-section .mission-text {
+  font-family: 'Orbitron', Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(113, 113, 122, 1);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.missions-section .mission-detail {
+  flex: 1.5;
+  min-width: 400px;
+}
+
+.missions-section .detail-card {
+  background-color: rgba(63, 63, 70, 0.2);
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(63, 63, 70, 0.5);
+}
+
+.missions-section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 120px 48px;
+  background-color: rgba(4, 4, 5, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.missions-section .bg-glow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1000px;
+  height: 600px;
+  background: radial-gradient(ellipse at bottom, rgba(0, 107, 255, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.missions-section .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.missions-section .section-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.missions-section .section-tag {
+  font-family: 'Orbitron', Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(0, 107, 255, 1);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.missions-section .section-title {
+  font-family: 'Orbitron', Helvetica;
+  font-size: 60px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 1);
+  line-height: 72px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.missions-section .section-desc {
+  font-family: 'Orbitron', Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(113, 113, 122, 1);
+  line-height: 28px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.missions-section .content-wrapper {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.missions-section .missions-list {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.missions-section .mission-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 24px;
+  background-color: rgba(63, 63, 70, 0.2);
+  border-radius: 16px;
+  border: 1px solid rgba(63, 63, 70, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.missions-section .mission-item:hover {
+  background-color: rgba(63, 63, 70, 0.4);
+}
+
+.missions-section .mission-item.active {
+  background-color: rgba(0, 107, 255, 0.15);
+  border: 2px solid rgba(0, 107, 255, 1);
+}
+
+.missions-section .mission-icon {
+  width: 56px;
+  height: 56px;
+  background-color: rgba(63, 63, 70, 0.8);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.missions-section .mission-item.active .mission-icon {
+  background-color: rgba(0, 107, 255, 1);
+}
+
+.missions-section .mission-title {
+  font-family: 'Orbitron', Helvetica;
+  font-size: 18px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 4px;
+}
+
+.missions-section .mission-text {
+  font-family: 'Orbitron', Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(113, 113, 122, 1);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.missions-section .mission-detail {
+  flex: 1.5;
+  min-width: 400px;
+}
+
+.missions-section .detail-card {
+  background-color: rgba(63, 63, 70, 0.2);
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(63, 63, 70, 0.5);
+}
+
+.missions-section .detail-image-wrapper {
+  position: relative;
+}
+
+.missions-section .detail-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+
+.missions-section .detail-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background: linear-gradient(to top, rgba(4, 4, 5, 1), transparent);
+}
+
+.missions-section .detail-content {
+  padding: 32px;
+}
+
+.missions-section .detail-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.missions-section .detail-icon {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(0, 107, 255, 1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.missions-section .detail-title {
+  font-family: 'Orbitron', Helvetica;
+  font-size: 32px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 1);
+}
+
+.missions-section .detail-desc {
+  font-family: 'Orbitron', Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(113, 113, 122, 1);
+  line-height: 26px;
+  margin-bottom: 28px;
+}
+
+.missions-section .features-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.missions-section .feature-tag {
+  font-family: 'Orbitron', Helvetica;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 20px;
+  background-color: rgba(0, 107, 255, 0.15);
+  border: 1px solid rgba(0, 107, 255, 0.5);
+  border-radius: 8px;
+  color: rgba(0, 107, 255, 1);
+}
+
+.missions-section .explore-btn {
+  width: 100%;
+  font-family: 'Orbitron', Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 16px 32px;
+  border-radius: 12px;
+  border: none;
+  background-color: rgba(0, 107, 255, 1);
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.missions-section .explore-btn:hover {
+  background-color: rgba(0, 90, 220, 1);
+  transform: scale(1.02);
+}
+
+.missions-section .pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.missions-section .pagination-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  border: none;
+  background-color: rgba(63, 63, 70, 0.8);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.missions-section .pagination-dot.active {
+  width: 32px;
+  background-color: rgba(0, 107, 255, 1);
+}
+
+@media (max-width: 768px) {
+  .missions-section .content-wrapper {
+    flex-direction: column;
+  }
+
+  .missions-section .missions-list,
+  .missions-section .mission-detail {
+    min-width: 100%;
+  }
+}
+.missions-section .detail-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background: linear-gradient(to top, rgba(4, 4, 5, 1), transparent);
+}
+
+.missions-section .detail-content {
+  padding: 32px;
+}
+
+.missions-section .detail-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.missions-section .detail-icon {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(0, 107, 255, 1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.missions-section .detail-title {
+  font-family: 'Orbitron', Helvetica;
+  font-size: 32px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 1);
+}
+
+.missions-section .detail-desc {
+  font-family: 'Orbitron', Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(113, 113, 122, 1);
+  line-height: 26px;
+  margin-bottom: 28px;
+}
+
+.missions-section .features-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.missions-section .feature-tag {
+  font-family: 'Orbitron', Helvetica;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 20px;
+  background-color: rgba(0, 107, 255, 0.15);
+  border: 1px solid rgba(0, 107, 255, 0.5);
+  border-radius: 8px;
+  color: rgba(0, 107, 255, 1);
+}
+
+.missions-section .explore-btn {
+  width: 100%;
+  font-family: 'Orbitron', Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 16px 32px;
+  border-radius: 12px;
+  border: none;
+  background-color: rgba(0, 107, 255, 1);
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.missions-section .explore-btn:hover {
+  background-color: rgba(0, 90, 220, 1);
+  transform: scale(1.02);
+}
+
+.missions-section .pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.missions-section .pagination-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  border: none;
+  background-color: rgba(63, 63, 70, 0.8);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.missions-section .pagination-dot.active {
+  width: 32px;
+  background-color: rgba(0, 107, 255, 1);
+}
+
+@media (max-width: 768px) {
+  .missions-section .content-wrapper {
+    flex-direction: column;
+  }
+
+  .missions-section .missions-list,
+  .missions-section .mission-detail {
+    min-width: 100%;
+  }
+}
+
+
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .menu-toggle span {
+    width: 30px;
+    height: 3px;
+    background: white;
+    transition: 0.3s;
+    border-radius: 50px;
+  }
+
+  .menu-toggle {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+}
+
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: rgba(0, 0, 0, .95);
+    padding: 20px;
+    border-radius: 12px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  /* Animation */
+  .menu-toggle.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .drone-image {
+    display: flex;
+    justify-content: flex-start; /* move image left */
+    width: 100%;
+  }
+
+  .drone-img {
+    width: 500%;      /* reduce size */
+    margin-left: -120px; /* shift more left (adjust as needed) */
+  }
+}
+
+
