@@ -232,42 +232,42 @@ document.addEventListener('DOMContentLoaded', function() {
       title: 'Aerial Photography',
       description: 'Capture stunning aerial shots for films, real estate, and events with our high-resolution cameras.',
       features: ['8K Video', '48MP Photos', 'HDR Support', 'Live Streaming'],
-      image: '/figmaAssets/photography drone.jpg',
+      image: 'figmaAssets/photography-drone.jpg',
       icon: '<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>'
     },
     {
       title: 'Infrastructure Inspection',
       description: 'Conduct safe and efficient inspections of bridges, power lines, and buildings.',
       features: ['Thermal Imaging', '3D Mapping', 'Zoom Capabilities', 'AI Detection'],
-      image: '/figmaAssets/image-1.png',
+      image: 'figmaAssets/image-1.png',
       icon: '<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>'
     },
     {
       title: 'Agriculture Monitoring',
       description: 'Monitor crop health, optimize irrigation, and increase yields with precision agriculture.',
       features: ['NDVI Analysis', 'Crop Health Maps', 'Irrigation Planning', 'Pest Detection'],
-      image: '/figmaAssets/agric drone.png',
+      image: 'figmaAssets/agric-drone.png',
       icon: '<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>'
     },
     {
       title: 'Search & Rescue',
       description: 'Save lives with rapid deployment drones equipped with thermal cameras and spotlights.',
       features: ['Thermal Vision', 'Night Operations', 'GPS Tracking', 'Speaker System'],
-      image: '/figmaAssets/search and rescue.png',
+      image: 'figmaAssets/search-and-rescue.png',
       icon: '<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>'
     },
     {
       title: 'Delivery Services',
       description: 'Fast, efficient, and eco-friendly package delivery to remote and urban areas.',
       features: ['5kg Payload', '30km Range', 'Smart Navigation', 'Secure Drop'],
-      image: 'figmaAssets/delivery drone.png',
+      image: 'figmaAssets/delivery-drone.png',
       icon: '<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>'
     },
     {
       title: 'Surveying & Mapping',
       description: 'Create accurate topographic maps and 3D models for construction and urban planning.',
       features: ['RTK GPS', 'Photogrammetry', '3D Modeling', 'Point Clouds'],
-      image: '/figmaAssets/subtract-2.png',
+      image: 'figmaAssets/subtract-2.png',
       icon: '<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>'
     }
   ];
